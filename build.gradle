@@ -2,11 +2,11 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.5'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'war'
+
 }
 
 group = 'my.code'
-version = '0.0.1-SNAPSHOT'
+version = '1.0'
 
 java {
     sourceCompatibility = '17'
@@ -40,12 +40,10 @@ dependencies {
 }
 
 dependencies {
-    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.10.2'
-    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.10.2'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.11.0-M1'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.11.0-M1'
     testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '3.2.4'
 
 }
 
-test {
-    useJUnitPlatform()
-}
+
